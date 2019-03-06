@@ -4,6 +4,46 @@ h1 {
     color:rgb(124, 0, 128);
 }
 
+/* body .name{
+    background-color: rgb(167, 158, 253);
+} */
+
 body {
     background-color: pink;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color:rgb(124, 0, 128);
 } 
+
+
+nav ul {
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(124, 0, 128)
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    }
+
+ footer{
+    padding-bottom: 10px;
+    position:fixed;
+    bottom:0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width:100%;
+    color: rgb(124, 0, 128);
+ } 
+
+ img{
+    display:block;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+
+ }

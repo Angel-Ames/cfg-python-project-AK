@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include "header.html"%}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>First Flask app</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
-</head>
 
-<body class="index">
-  <h1 class="index">{{ number1 }} + {{ number2 }} = {{ total }}</h1>
+  <h1>{{ number1 }} + {{ number2 }} = {{ total }}</h1>
 </body>
 
-</html>
+{% include "footer.html"%}
