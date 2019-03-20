@@ -16,9 +16,20 @@
     {% else %}
     <h1>Hello world!</h1>
     {% endif %}
-</body>
 
-    <img src="{{ url_for('static', filename='IMG_0860.jpg')}}" alt="Phoebe">
+<div class="row">
+    <div class="column">
+        <a href="Phoebe">  
+        <img class="kitten" src="{{ url_for('static', filename='IMG_0860.jpg')}}" alt="Phoebe">
+        </a>
+    </div>
+    <div class="column">
+        <a href="Pancake">
+        <img class="hedgehog" src="{{ url_for('static', filename='IMG_1310.jpg')}}" alt="Pancake">
+        </a>
+    </div>
+</div>
+
 </body>
 
 {% include "footer.html"%}

@@ -11,6 +11,22 @@ def say_hello():
 def say_hello_to(name):
     return render_template("index.html", user=name)
 
+@app.route("/about") 
+def about_page():
+    return render_template("about.html")
+
+@app.route("/contact") 
+def contact_page():
+    return render_template("contact.html")
+
+@app.route("/Phoebe") 
+def Phoebe_page():
+    return render_template("Phoebe.html")
+
+@app.route("/Pancake") 
+def Pancake_page():
+    return render_template("Pancake.html")
+
 @app.route("/<int:number1>/<int:number2>")
 def show_two_numbers_total(number1, number2):
     total= number1 + number2

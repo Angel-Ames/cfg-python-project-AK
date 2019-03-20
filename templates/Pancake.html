@@ -1,0 +1,22 @@
+{% include "header.html"%}
+
+<h1> Pancake </h1>
+
+<p>This is a page dedicated to Pancake</p>
+
+<div class="photo_row">
+        <div class="photo_column">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake1.jpg')}}" alt="Pancake">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake2.jpg')}}" alt="Pancake">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake7.jpg')}}" alt="Pancake">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake4.jpg')}}" alt="Pancake">
+        </div>
+        <div class="photo_column">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake5.jpg')}}" alt="Pancake">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake6.jpg')}}" alt="Pancake">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake3.jpg')}}" alt="Pancake">
+            <img class="pancake_images" src="{{ url_for('static', filename='IMG_pancake8.jpg')}}" alt="Pancake">
+        </div>
+    </div>
+
+{% include "footer.html"%}

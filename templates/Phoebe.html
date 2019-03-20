@@ -1,0 +1,23 @@
+{% include "header.html"%}
+
+<h1> Phoebe </h1>
+
+<p>This is a page dedicated to Phoebe</p>
+
+<div class="photo_row">
+    <div class="photo_column">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe1.jpg')}}" alt="Phoebe">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe2.jpg')}}" alt="Phoebe">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe3.jpg')}}" alt="Phoebe">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe4.jpg')}}" alt="Phoebe">
+    </div>
+    <div class="photo_column">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe3.jpg')}}" alt="Phoebe">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe4.jpg')}}" alt="Phoebe">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe5.jpg')}}" alt="Phoebe">
+        <img class="phoebe_images" src="{{ url_for('static', filename='IMG_phoebe6.jpg')}}" alt="Phoebe">
+    </div>
+</div>
+
+
+{% include "footer.html"%}

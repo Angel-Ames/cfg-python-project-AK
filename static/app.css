@@ -1,12 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: Arial, sans-serif;
     text-align: center;
     color:rgb(124, 0, 128);
 }
-
-/* body .name{
-    background-color: rgb(167, 158, 253);
-} */
 
 body {
     background-color: pink;
@@ -15,13 +15,33 @@ body {
     color:rgb(124, 0, 128);
 } 
 
+a{ 
+    color: grey;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    padding: 14px;
+}
+
+a:hover {
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+a:active {
+    color:black;
+}
+
+a:visited {
+    color: purple;
+}
 
 nav ul {
     list-style: none;
     font-family: Arial, sans-serif;
     font-size: 20px;
     text-align: center;
-    color: rgb(124, 0, 128)
+    color: rgb(124, 0, 128);
+    display: block;
   }
   
   nav ul li {
@@ -31,7 +51,7 @@ nav ul {
 
  footer{
     padding-bottom: 10px;
-    position:fixed;
+    /* position:fixed; */
     bottom:0;
     font-family: Arial, sans-serif;
     font-size: 20px;
@@ -40,10 +60,70 @@ nav ul {
     color: rgb(124, 0, 128);
  } 
 
- img{
-    display:block;
-    width:80%;
+.column{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ .kitten{
+    /* opacity: 1; */
+    /* display:block; */
+    width:100%;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 15%;
+    /* backface-visibility: hidden; */
 
+ }
+
+.kitten:hover {
+    opacity: 0.3;
+  }
+
+ .hedgehog{
+    opacity: 1;
+    /* display:block; */
+    width:100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
+    backface-visibility: hidden;
+    padding: 10px;
+
+ }
+
+ .hedgehog:hover {
+     opacity:0.3;
+ }
+
+.phoebe_images{
+    width:100%;
+}
+
+.pancake_images{
+    width:100%;
+}
+ .photo_row{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 4px;
+ }
+
+ .photo_column{
+    flex: 50%;
+    padding: 0 4px;
+ }
+
+ .photo_column phoebe_images{
+    margin-top: 8px;
+    vertical-align: middle;
  }
