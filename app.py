@@ -13,9 +13,9 @@ def say_hello():
 def say_hello_to(name):
     return render_template("index.html", user=name)
 
-@app.route("/About") 
+@app.route("/about") 
 def about_page():
-    return render_template("About.html")
+    return render_template("about.html")
 
 @app.route("/contact") 
 def contact_page():
