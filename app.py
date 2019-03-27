@@ -1,4 +1,6 @@
+
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
@@ -40,4 +42,7 @@ def get_feedback():
 
   return render_template("feedback.html", form_data=data)
   
-app.run(debug=True)
+if 'PORT' in os.environ:
+     app.run(host='0.0.0.0', port=int(os.environ['PORT']))
+else:
+     app.run(debug=True)
