@@ -13,7 +13,7 @@ def say_hello():
 def say_hello_to(name):
     return render_template("index.html", user=name)
 
-@app.route("/about") 
+@app.route("/About") 
 def about_page():
     return render_template("about.html")
 
